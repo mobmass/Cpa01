@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Claim your exclusive $1000 CashApp or $100 Nike Gift Card today! Simple steps, fast rewards." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Claim your exclusive $1000 CashApp or $100 Nike Gift Card today! Simple steps, fast rewards.">
     <title>Exclusive Rewards - Claim Your Gift Card</title>
-    
     <style>
-        /* --- RESET AND BASE STYLES --- */
+        /* --- RESET & BASE STYLES --- */
         * {
             margin: 0;
             padding: 0;
@@ -222,36 +221,36 @@
         <div class="urgency-text">🔥 Only <span id="spots-left">7</span> spots remaining for today's promotion!</div>
     </header>
 
-<main>
-    <div class="offers-container">
-        <!-- Offer 1: Any Device -->
-        <div class="offer-card" data-device="all">
-            <div class="badge">✅ Any Device</div>
-            <h2>$1000 CashApp</h2>
-            <p>Get a $1000 CashApp Gift Card sent directly to your account. Quick and easy verification!</p>
-            <a href="https://singingfiles.com/show.php?l=0&amp;u=2563520&amp;id=75220" class="cta-button" target="_blank" rel="noopener noreferrer">Claim Now</a>
-        </div>
+    <main>
+        <div class="offers-container">
+            <!-- Offer 1: Any Device -->
+            <div class="offer-card" data-device="all">
+                <div class="badge">✅ Any Device</div>
+                <h2>$1000 CashApp</h2>
+                <p>Get a $1000 CashApp Gift Card sent directly to your account. Quick and easy verification!</p>
+                <a href="https://singingfiles.com/show.php?l=0&u=2563520&id=75220" class="cta-button" target="_blank" rel="noopener noreferrer">Claim Now</a>
+            </div>
 
-        <!-- Offer 2: Android & PC -->
-        <div class="offer-card" data-device="android-pc">
-            <div class="badge android-pc">📱💻 Android &amp; PC Only</div>
-            <h2>$1000 CashApp</h2>
-            <p>Exclusive premium offer for Android and PC users. Higher approval rate!</p>
-            <a href="https://singingfiles.com/show.php?l=0&amp;u=2563520&amp;id=75525" class="cta-button" target="_blank" rel="noopener noreferrer">Claim Now</a>
-        </div>
+            <!-- Offer 2: Android & PC -->
+            <div class="offer-card" data-device="android-pc">
+                <div class="badge android-pc">📱💻 Android & PC Only</div>
+                <h2>$1000 CashApp</h2>
+                <p>Exclusive premium offer for Android and PC users. Higher approval rate!</p>
+                <a href="https://singingfiles.com/show.php?l=0&u=2563520&id=75525" class="cta-button" target="_blank" rel="noopener noreferrer">Claim Now</a>
+            </div>
 
-        <!-- Offer 3: Android & PC -->
-        <div class="offer-card" data-device="android-pc">
-            <div class="badge android-pc">📱💻 Android &amp; PC Only</div>
-            <h2>$100 Nike Gift Card</h2>
-            <p>Step up your game! Claim a $100 Nike Gift Card and shop your favorite gear.</p>
-            <a href="https://singingfiles.com/show.php?l=0&amp;u=2563520&amp;id=75217" class="cta-button" target="_blank" rel="noopener noreferrer">Claim Now</a>
+            <!-- Offer 3: Android & PC -->
+            <div class="offer-card" data-device="android-pc">
+                <div class="badge android-pc">📱💻 Android & PC Only</div>
+                <h2>$100 Nike Gift Card</h2>
+                <p>Step up your game! Claim a $100 Nike Gift Card and shop your favorite gear.</p>
+                <a href="https://singingfiles.com/show.php?l=0&u=2563520&id=75217" class="cta-button" target="_blank" rel="noopener noreferrer">Claim Now</a>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 
     <footer>
-        <p>2026 Exclusive Rewards. All rights reserved.</p>
+        <p>&copy; 2026 Exclusive Rewards. All rights reserved.</p>
         <p><small>Disclaimer: This website contains affiliate links. We may receive a commission if you complete an offer. This is not affiliated with or endorsed by CashApp or Nike.</small></p>
     </footer>
 
@@ -280,7 +279,7 @@
 
                 if (deviceType === 'all') {
                     // Recommend "All" if user is on iOS or unknown mobile
-                    if (!isAndroid And !isPC) isRecommended = true;
+                    if (!isAndroid && !isPC) isRecommended = true;
                 } else if (deviceType === 'android-pc') {
                     // Recommend "Android/PC" if user is on those devices
                     if (isAndroid || isPC) isRecommended = true;
@@ -309,7 +308,7 @@
                 
                 const notif = document.createElement('div');
                 notif.className = 'notification';
-                notif.innerHTML = `<strong>✅ ${name}</strong><br/>${action}`;
+                notif.innerHTML = `<strong>✅ ${name}</strong><br>${action}`;
                 document.body.appendChild(notif);
                 
                 // Trigger animation
